@@ -1,0 +1,511 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "app",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/admin/daws/[slug]",
+      "regex": "^/admin/daws/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/admin/daws/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/drum-kit/[slug]",
+      "regex": "^/admin/drum\\-kit/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/admin/drum\\-kit/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/plugins/[slug]",
+      "regex": "^/admin/plugins/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/admin/plugins/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/admin/programas/[slug]",
+      "regex": "^/admin/programas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/admin/programas/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/daws/[slug]",
+      "regex": "^/daws/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/daws/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/drum-kit/[slug]",
+      "regex": "^/drum\\-kit/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/drum\\-kit/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/plugins/[slug]",
+      "regex": "^/plugins/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/plugins/(?<nxtPslug>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/programas/[slug]",
+      "regex": "^/programas/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPslug": "nxtPslug"
+      },
+      "namedRegex": "^/programas/(?<nxtPslug>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/admin",
+      "regex": "^/admin(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin(?:/)?$"
+    },
+    {
+      "page": "/admin/assinaturas",
+      "regex": "^/admin/assinaturas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/assinaturas(?:/)?$"
+    },
+    {
+      "page": "/admin/daws",
+      "regex": "^/admin/daws(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/daws(?:/)?$"
+    },
+    {
+      "page": "/admin/drum-kit",
+      "regex": "^/admin/drum\\-kit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/drum\\-kit(?:/)?$"
+    },
+    {
+      "page": "/admin/plugins",
+      "regex": "^/admin/plugins(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/plugins(?:/)?$"
+    },
+    {
+      "page": "/admin/programas",
+      "regex": "^/admin/programas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/admin/programas(?:/)?$"
+    },
+    {
+      "page": "/api/admin/assinaturas/atualizar",
+      "regex": "^/api/admin/assinaturas/atualizar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/assinaturas/atualizar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/assinaturas/listar",
+      "regex": "^/api/admin/assinaturas/listar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/assinaturas/listar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/assinaturas/redefinir-senha",
+      "regex": "^/api/admin/assinaturas/redefinir\\-senha(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/assinaturas/redefinir\\-senha(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/criar",
+      "regex": "^/api/admin/daws/criar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/criar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/deletar",
+      "regex": "^/api/admin/daws/deletar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/deletar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/editar",
+      "regex": "^/api/admin/daws/editar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/editar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/editar-arquivos",
+      "regex": "^/api/admin/daws/editar\\-arquivos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/editar\\-arquivos(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/listar",
+      "regex": "^/api/admin/daws/listar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/listar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/daws/obter",
+      "regex": "^/api/admin/daws/obter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/daws/obter(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/criar",
+      "regex": "^/api/admin/drum\\-kit/criar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/criar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/deletar",
+      "regex": "^/api/admin/drum\\-kit/deletar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/deletar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/editar",
+      "regex": "^/api/admin/drum\\-kit/editar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/editar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/editar-arquivos",
+      "regex": "^/api/admin/drum\\-kit/editar\\-arquivos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/editar\\-arquivos(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/listar",
+      "regex": "^/api/admin/drum\\-kit/listar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/listar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/drum-kit/obter",
+      "regex": "^/api/admin/drum\\-kit/obter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/drum\\-kit/obter(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/criar",
+      "regex": "^/api/admin/plugins/criar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/criar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/deletar",
+      "regex": "^/api/admin/plugins/deletar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/deletar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/editar",
+      "regex": "^/api/admin/plugins/editar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/editar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/editar-arquivos",
+      "regex": "^/api/admin/plugins/editar\\-arquivos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/editar\\-arquivos(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/listar",
+      "regex": "^/api/admin/plugins/listar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/listar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/plugins/obter",
+      "regex": "^/api/admin/plugins/obter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/plugins/obter(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/criar",
+      "regex": "^/api/admin/programas/criar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/criar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/deletar",
+      "regex": "^/api/admin/programas/deletar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/deletar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/editar",
+      "regex": "^/api/admin/programas/editar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/editar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/editar-arquivos",
+      "regex": "^/api/admin/programas/editar\\-arquivos(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/editar\\-arquivos(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/listar",
+      "regex": "^/api/admin/programas/listar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/listar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/programas/obter",
+      "regex": "^/api/admin/programas/obter(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/programas/obter(?:/)?$"
+    },
+    {
+      "page": "/api/admin/usuarios/buscar",
+      "regex": "^/api/admin/usuarios/buscar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/usuarios/buscar(?:/)?$"
+    },
+    {
+      "page": "/api/admin/validar",
+      "regex": "^/api/admin/validar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/admin/validar(?:/)?$"
+    },
+    {
+      "page": "/api/assinaturas/inativar",
+      "regex": "^/api/assinaturas/inativar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/assinaturas/inativar(?:/)?$"
+    },
+    {
+      "page": "/api/assinaturas/me",
+      "regex": "^/api/assinaturas/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/assinaturas/me(?:/)?$"
+    },
+    {
+      "page": "/api/contato",
+      "regex": "^/api/contato(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contato(?:/)?$"
+    },
+    {
+      "page": "/api/daws",
+      "regex": "^/api/daws(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/daws(?:/)?$"
+    },
+    {
+      "page": "/api/download",
+      "regex": "^/api/download(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/download(?:/)?$"
+    },
+    {
+      "page": "/api/download-gratis/baixar",
+      "regex": "^/api/download\\-gratis/baixar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/download\\-gratis/baixar(?:/)?$"
+    },
+    {
+      "page": "/api/download-gratis/iniciar",
+      "regex": "^/api/download\\-gratis/iniciar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/download\\-gratis/iniciar(?:/)?$"
+    },
+    {
+      "page": "/api/download-gratis/status",
+      "regex": "^/api/download\\-gratis/status(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/download\\-gratis/status(?:/)?$"
+    },
+    {
+      "page": "/api/drum-kit",
+      "regex": "^/api/drum\\-kit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/drum\\-kit(?:/)?$"
+    },
+    {
+      "page": "/api/imagem",
+      "regex": "^/api/imagem(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/imagem(?:/)?$"
+    },
+    {
+      "page": "/api/me",
+      "regex": "^/api/me(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/me(?:/)?$"
+    },
+    {
+      "page": "/api/minha-conta",
+      "regex": "^/api/minha\\-conta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/minha\\-conta(?:/)?$"
+    },
+    {
+      "page": "/api/pagamentos/ggpix/criar",
+      "regex": "^/api/pagamentos/ggpix/criar(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/pagamentos/ggpix/criar(?:/)?$"
+    },
+    {
+      "page": "/api/plugins",
+      "regex": "^/api/plugins(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/plugins(?:/)?$"
+    },
+    {
+      "page": "/api/programas",
+      "regex": "^/api/programas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/programas(?:/)?$"
+    },
+    {
+      "page": "/api/webhooks/ggpix",
+      "regex": "^/api/webhooks/ggpix(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/webhooks/ggpix(?:/)?$"
+    },
+    {
+      "page": "/assinaturas",
+      "regex": "^/assinaturas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/assinaturas(?:/)?$"
+    },
+    {
+      "page": "/auth/callback",
+      "regex": "^/auth/callback(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/auth/callback(?:/)?$"
+    },
+    {
+      "page": "/contato",
+      "regex": "^/contato(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contato(?:/)?$"
+    },
+    {
+      "page": "/daws",
+      "regex": "^/daws(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/daws(?:/)?$"
+    },
+    {
+      "page": "/drum-kit",
+      "regex": "^/drum\\-kit(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/drum\\-kit(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/minha-conta",
+      "regex": "^/minha\\-conta(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/minha\\-conta(?:/)?$"
+    },
+    {
+      "page": "/plugins",
+      "regex": "^/plugins(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/plugins(?:/)?$"
+    },
+    {
+      "page": "/privacidade",
+      "regex": "^/privacidade(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/privacidade(?:/)?$"
+    },
+    {
+      "page": "/programas",
+      "regex": "^/programas(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/programas(?:/)?$"
+    },
+    {
+      "page": "/redefinir-senha",
+      "regex": "^/redefinir\\-senha(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/redefinir\\-senha(?:/)?$"
+    },
+    {
+      "page": "/termos-de-uso",
+      "regex": "^/termos\\-de\\-uso(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/termos\\-de\\-uso(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

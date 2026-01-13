@@ -1,0 +1,157 @@
+@import "tailwindcss";
+
+/* =========================
+   FONTES CUSTOMIZADAS
+========================= */
+@font-face {
+  font-family: "MinhaFonte";
+  src: url("/fonts/MinhaFonte.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =========================
+   BASE DO SITE
+========================= */
+:root {
+  --font-sans: "MinhaFonte", system-ui, sans-serif;
+  --font-display: "MinhaFonte", system-ui, sans-serif;
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.corpo-site {
+  @apply min-h-screen text-white;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+    url("/imagens/bg.gif");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .corpo-site {
+    background-attachment: scroll;
+  }
+}
+
+/* CABEÇALHO */
+.cabecalho-site {
+  @apply sticky top-0 z-50 border-b border-white/10 bg-black/40 backdrop-blur-xl;
+}
+
+.cabecalho-conteudo {
+  @apply mx-auto flex max-w-6xl items-center justify-between px-5 py-4;
+}
+
+/* CONTEÚDO */
+.conteudo-site {
+  @apply mx-auto w-full max-w-6xl px-5 py-10;
+}
+
+/* RODAPÉ */
+.rodape-site {
+  @apply border-t border-white/10 mt-10;
+}
+
+.rodape-conteudo {
+  @apply mx-auto max-w-6xl px-5 py-8 text-white/60 text-sm;
+}
+
+/* ANIMAÇÕES */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes neonPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+.neon-pulse {
+  animation: neonPulse 1s ease-in-out infinite;
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+/* Brilho suave ao passar o mouse na imagem do modal */
+.modal-image-glow {
+  transition: filter 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.modal-image-glow:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  transform: scale(1.01);
+}
+/* =========================
+   MODAL APOIE – EFEITOS PRO
+========================= */
+
+/* Glow forte na imagem */
+.modal-image-neon {
+  transition:
+    filter 0.35s ease,
+    box-shadow 0.35s ease,
+    transform 0.35s ease;
+}
+
+.modal-image-neon:hover {
+  filter: brightness(1.25) contrast(1.1);
+  box-shadow:
+    0 0 25px rgba(0, 255, 255, 0.9),
+    0 0 55px rgba(0, 160, 255, 0.7),
+    0 0 90px rgba(0, 80, 255, 0.6);
+  transform: scale(1.035);
+}
+
+/* Neon forte no botão */
+.neon-cta {
+  animation: neonPulse 1.2s ease-in-out infinite;
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.8),
+    0 0 45px rgba(0, 160, 255, 0.6),
+    0 0 70px rgba(0, 80, 255, 0.5);
+}
+
+.neon-cta:hover {
+  transform: scale(1.06);
+}
+
+/* Entrada suave e profissional */
+@keyframes modalFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modal-pro {
+  animation: modalFadeUp 0.4s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+}
