@@ -64,7 +64,7 @@ export default async function LayoutRaiz({ children }: { children: React.ReactNo
             <div className="flex gap-6 text-sm">
               <Link href="/contato" className="hover:underline text-white/70">Contato</Link>
               <Link href="/termos-de-uso" className="hover:underline text-white/70">Termos de Uso</Link>
-              <Link href="/politica-de-privacidade" className="hover:underline text-white/70">Política de Privacidade</Link>
+              <Link href="/privacidade" className="hover:underline text-white/70">Política de Privacidade</Link>
             </div>
           </div>
         </footer>
