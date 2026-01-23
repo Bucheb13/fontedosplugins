@@ -152,7 +152,7 @@ const hrefAssinatura = user
       <section className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/5 p-8 md:p-12">
         <div
           className="absolute inset-0 bg-cover bg-center opacity-60"
-          style={{ backgroundImage: "url('/imagens/banner-pesquisa.jpg')" }}
+          style={{ backgroundImage: "url('/imagens/banner-pesquisa.webp')" }}
         />
 
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-black/80 via-black/60 to-black/80" />
@@ -264,7 +264,7 @@ const hrefAssinatura = user
       className="group relative block cursor-pointer overflow-hidden rounded-3xl border border-white/10 bg-white/5 transition-all duration-500 hover:border-white/25 hover:scale-[1.01] hover:brightness-110"
     >
       <img
-        src="/imagens/banner-apoie.png"
+        src="/imagens/banner-apoie.webp"
         alt="Assinatura FonteDosPlugins"
         className="aspect-[16/6] w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.05]"
       />

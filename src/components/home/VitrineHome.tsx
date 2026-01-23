@@ -135,7 +135,7 @@ export function VitrineHome({
       {/* FUNDO BASE */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-60"
-        style={{ backgroundImage: "url('/imagens/banner-destaque.png')" }}
+        style={{ backgroundImage: "url('/imagens/banner-destaque.webp')" }}
       />
       {/* OVERLAY IDENTIDADE */}
       <div className="pointer-events-none absolute inset-0 z-0 bg-gradient-to-b from-black/30 via-black/60 to-black/80" />
