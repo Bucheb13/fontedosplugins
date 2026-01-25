@@ -392,7 +392,7 @@ export default function PaginaAdminEditarDrumKit() {
       {/* ARQUIVOS */}
       <section className="rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8">
         <h3 className="text-lg font-semibold">Arquivos (R2)</h3>
-        <p className="mt-1 text-sm text-white/60">Atualize a capa e/ou o .torrent deste drumKit.</p>
+        <p className="mt-1 text-sm text-white/60">Atualize a capa e/ou o .torrent deste drumKit (1200x547).</p>
 
         <div className="mt-4 grid gap-3">
           <div className="rounded-2xl border border-white/10 bg-black/20 p-4">

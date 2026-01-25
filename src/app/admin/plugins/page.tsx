@@ -313,7 +313,7 @@ export default function PaginaAdminPlugins() {
             onClick={() => inputCapaRef.current?.click()}
             className="rounded-2xl bg-black/30 px-4 py-3 text-left"
           >
-            {arquivoCapa ? `✅ ${arquivoCapa.name}` : "Selecionar capa"}
+            {arquivoCapa ? `✅ ${arquivoCapa.name}` : "Selecionar capa (1200x547)"}
           </button>
           <input ref={inputCapaRef} type="file" hidden accept="image/*" onChange={(e) => setArquivoCapa(e.target.files?.[0] ?? null)} />
 
